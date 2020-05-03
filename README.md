@@ -1,3 +1,7 @@
+This is a fork of jabirali's "tmux-tilish" plugin. It's nearly identical, 
+but is configured to be more similar to my dwm bindings. Below is the original
+readme, with the bindings updated for my use. 
+
 # Tmux Tilish
 
 This is a plugin that makes [`tmux`][6] behave more like a typical
@@ -116,9 +120,9 @@ while a "pane" is what `i3wm` would call a "window" and `vim` would call a "spli
 | <kbd>Alt</kbd> + <kbd>f</kbd> | Switch to layout: fullscreen (zoom) |
 | <kbd>Alt</kbd> + <kbd>r</kbd> | Refresh current layout |
 | <kbd>Alt</kbd> + <kbd>n</kbd> | Name current workspace |
-| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>q</kbd> | Quit (close) pane |
+| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>c</kbd> | Quit (close) pane |
 | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> | Exit (detach) `tmux` |
-| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>c</kbd> | Reload config |
+| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>r</kbd> | Reload config |
 
 The <kbd>Alt</kbd> + <kbd>0</kbd> and <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>0</kbd> 
 bindings are "smart": depending on `base-index`, they either act on workspace 0 or 10.

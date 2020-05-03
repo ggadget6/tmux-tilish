@@ -194,15 +194,15 @@ fi
 tmux $bind "${mod}n" \
 	command-prompt -p 'Workspace name:' 'rename-window %%'
 
-# Close a window with Alt + Shift + q.
+# Close a window with Alt + Shift + c.
 if [ -z "$legacy" ]
 then
-	tmux $bind "${mod}Q" \
+	tmux $bind "${mod}C" \
 		kill-pane \\\;\
 		select-layout \\\;\
 		select-layout -E
 else
-	tmux $bind "${mod}Q" \
+	tmux $bind "${mod}C" \
 		kill-pane
 fi
 
@@ -210,8 +210,8 @@ fi
 tmux $bind "${mod}E" \
 	confirm-before -p "Detach from #H:#S? (y/n)" detach-client
 
-# Reload configuration with Alt + Shift + c.
-tmux $bind "${mod}C" \
+# Reload configuration with Alt + Shift + r.
+tmux $bind "${mod}R" \
 	source-file ~/.tmux.conf \\\;\
 	display "Reloaded config"
 # }}}
